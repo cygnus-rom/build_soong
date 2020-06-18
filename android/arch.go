@@ -135,6 +135,7 @@ var archVariants = map[ArchType][]string{
 	Arm64: {
 		"armv8_a",
 		"armv8_2a",
+		"armv8-2a-dotprod",
 		"cortex-a53",
 		"cortex-a55",
 		"cortex-a72",
@@ -1666,6 +1667,9 @@ func getMegaDeviceConfig() []archConfig {
 		{"arm64", "armv8-2a", "cortex-a76", []string{"arm64-v8a"}},
 		{"arm64", "armv8-2a", "kryo300", []string{"arm64-v8a"}},
 		{"arm64", "armv8-2a", "kryo385", []string{"arm64-v8a"}},
+		{"arm64", "armv8-2a-dotprod", "cortex-a55", []string{"arm64-v8a"}},
+		{"arm64", "armv8-2a-dotprod", "cortex-a75", []string{"arm64-v8a"}},
+		{"arm64", "armv8-2a-dotprod", "cortex-a76", []string{"arm64-v8a"}},
 		{"mips", "mips32-fp", "", []string{"mips"}},
 		{"mips", "mips32r2-fp", "", []string{"mips"}},
 		{"mips", "mips32r2-fp-xburst", "", []string{"mips"}},
